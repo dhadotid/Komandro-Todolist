@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/custom_layout_todolist_namatask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Nama Task"
+                android:textColor="@android:color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/custom_layout_todolist_tanggaldibuat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Dibuat"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/tulisandeadline"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/tulisandeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deadline:"
+                android:textColor="@android:color/black"
+                android:layout_above="@+id/custom_layout_todolist_tanggaldeadline"
+                android:layout_alignStart="@+id/custom_layout_todolist_tanggaldeadline" />
+
+            <TextView
+                android:id="@+id/custom_layout_todolist_tanggaldeadline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal deadline"
+                android:textColor="@android:color/black"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
